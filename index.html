@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="JS/scrip.js" defer></script>
+    <title>Planilla de Reemplazos</title>
+</head>
+<body>
+    <div class="image-container">
+        <img src="logoesc.png" alt="Logo de la escuela">
+    </div>
+    <div class="container">
+        <h1>Planilla de Reemplazos</h1>
+        <form id="replacementForm">
+            <div class="form-group">
+                <label for="teacherName">Nombre y Apellido del Docente,asistente,directivo:</label>
+                <input type="text" id="teacherName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="licenseArticle">Artículo de la Licencia:</label>
+                <input type="text" id="licenseArticle" required>
+            </div>
+            <div class="form-group">
+                <label for="shift">Turno:</label>
+                <input type="text" id="shift" required>
+            </div>
+            <div class="form-group">
+                <label for="grade">Grado:</label>
+                <input type="text" id="grade" required>
+            </div>
+            <div class="form-group">
+                <label for="startDate">Desde (Fecha):</label>
+                <input type="date" id="startDate" required>
+            </div>
+            <div class="form-group">
+                <label for="endDate">Hasta (Fecha):</label>
+                <input type="date" id="endDate" required>
+            </div>
+            <div class="form-group">
+                <label for="replacementName">Apellido y Nombre de quién lo reemplaza:</label>
+                <input type="text" id="replacementName" required>
+            </div>
+            <div class="form-group">
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" required>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="confirmationMessage" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
